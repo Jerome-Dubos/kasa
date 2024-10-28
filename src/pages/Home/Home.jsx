@@ -1,6 +1,6 @@
-import LocationItem from '../../components/LocationItem'
+import LocationItem from '../../components/LocationItem/LocationItem'
 import Logements from '../../datas/Logements.json'
-import './index.scss'
+import './Home.scss'
 fetch('../../datas/Logements.json')
 
 function Home() {

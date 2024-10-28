@@ -1,4 +1,4 @@
-import './index.scss'
+import './Logement.scss'
 
 
 function Logement() {

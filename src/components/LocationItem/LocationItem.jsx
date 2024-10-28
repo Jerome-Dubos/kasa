@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import './index.scss'
-import Logement from '../../pages/logement/index'
+import './LocationItem.scss'
 
 
 function LocationItem ({id, title, cover}) {

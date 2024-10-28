@@ -1,4 +1,4 @@
-import './index.scss'
+import './Footer.scss'
 import logo from '../images/footer-logo.svg'
 
 
