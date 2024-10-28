@@ -1,0 +1,33 @@
+.item {
+    margin-bottom: 50px;
+    position: relative;
+    width: 29%;
+    height: 340px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    p{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        font-weight: 700;
+        width: 70%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .item {
+        width: 100%;
+    }
+}

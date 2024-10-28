@@ -17,6 +17,23 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 50px;
+    gap: 6%;
+}
 
+@media screen and (max-width: 1024px) {
+    .banner {
+        p {
+            font-size: 24px;
+        }
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
 }

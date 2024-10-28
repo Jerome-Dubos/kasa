@@ -10,8 +10,8 @@ function Header() {
       <img src={logo} alt="Logo Kasa" />
       </div>
       <ul>
-        <NavLink exact to="/" activeClassName="active">Accueil</NavLink>
-        <NavLink to="/about" activeClassName="active">A Propos</NavLink>
+        <NavLink exact to="/" activeclassname="active">Accueil</NavLink>
+        <NavLink to="/about" activeclassname="active">A Propos</NavLink>
       </ul>
     </nav>
   )

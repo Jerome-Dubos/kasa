@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
 import Home from './pages/Home'
 import Logement from './pages/logement'
-import Header from './components/Header'
 import Error from './components/Error'
 import About from './pages/about'
-import './index.scss'
 import Footer from './components/Footer'
+import './index.scss'
 
 ReactDOM.render(
   <React.StrictMode>
