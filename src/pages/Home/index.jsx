@@ -1,7 +1,9 @@
+import './index.scss'
+
 function Home() {
   return (
-    <div>
-      <h1> Page d'accueil 🏠</h1>
+    <div className='banner'>
+      <p>Chez vous, partout et ailleurs</p>
     </div>
   )
 }

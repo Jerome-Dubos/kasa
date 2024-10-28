@@ -1,0 +1,22 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    height: 223px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 25px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../../components/images/banner-home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    p {
+        color: white;
+        font-weight: 700;
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
