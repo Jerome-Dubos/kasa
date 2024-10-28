@@ -2,7 +2,10 @@ import './index.scss'
 
 function About() {
     return (
-        <h1>A Propos</h1>
+        <main>
+            <div className='banner about'>
+    </div>
+        </main>
     )
 }
 
