@@ -1,4 +1,4 @@
-import { redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './index.scss'
 import Logement from '../../pages/logement/index'
 
@@ -6,10 +6,12 @@ import Logement from '../../pages/logement/index'
 function LocationItem ({id, title, cover}) {
     return (
         //Ajouter redirection lors du click sur l'item
-        <div className='item' onClick={() => redirect("../../pages/logement/index.jsx")}>
+        <Link to={`/logement/${id}`}>
+            <div className='item'>
             <img src={cover} alt={title} />
             <p>{title}</p>
-        </div>
+            </div>
+        </Link>
     )
 }
 

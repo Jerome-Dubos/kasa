@@ -1,5 +1,6 @@
 import './index.scss'
 
+
 function Logement() {
   return (
       <h1>Logement</h1>
