@@ -1,0 +1,43 @@
+.collapseTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF6060;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.collapseTitle:hover,
+.collapsed .collapseTitle {
+    cursor: pointer;
+}
+
+.collapseIcon {
+    transform: rotate(0deg);
+    transition: all 0.4s ease-in-out;
+}
+
+.collapsed .collapseIcon{
+    transform: rotate(-180deg);
+    transition: all 0.4s ease-in-out;
+}
+
+.collapseContent{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.collapsed .collapseContent{
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    padding: 1rem;    
+}
+
