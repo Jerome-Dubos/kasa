@@ -47,7 +47,7 @@ $border-radius: 15px;
 .tags-rating {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
     margin: 30px 100px 0;
 
     .tags {
@@ -89,6 +89,10 @@ $border-radius: 15px;
     .description {
         flex-direction: column;
         margin: 10px 40px 0;
+
+        .location {
+            margin-bottom: 20px;
+        }
 
         .host {
             margin-top: 20px;  
