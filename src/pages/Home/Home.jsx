@@ -1,24 +1,26 @@
-import LocationItem from '../../components/LocationItem/LocationItem'
-import Logements from '../../datas/Logements.json'
-import './Home.scss'
+import React from 'react';
+import LocationItem from '../../components/LocationItem/LocationItem';
+import Logements from '../../datas/Logements.json';
+import './Home.scss';
 
-
-
-
-function Home() {
-
+const Home = () => {
   return (
     <main>
-    <div className='banner'>
+      <div className='banner'>
       <p>Chez vous, partout et ailleurs</p>
-    </div>
-    <div className='gallery'>
-      {Logements.map(({id, title, cover}) => (
-        <LocationItem key={id} title={title} cover={cover}/>
-      ))}
-    </div>
-      </main>
-  )
+      </div>
+      <div className='gallery'>
+        {Logements.map((logement) => (
+          <LocationItem
+          key={logement.id}
+          id={logement.id}
+          title={logement.title}
+          cover={logement.cover}
+          />
+        ))}
+      </div>
+    </main>
+  );
 }
 
-export default Home
+export default Home;
