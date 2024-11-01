@@ -1,3 +1,10 @@
+$color-primary: #FF6060;
+$color-white: white;
+$font-size-large: 36px;
+$font-size-medium: 18px;
+$font-size-small: 14px;
+$border-radius: 15px;
+
 .description {
     display: flex;
     justify-content: space-between;
@@ -6,20 +13,20 @@
     gap: 20px;
 
     .title {
-        font-size: 36px;
-        color: #FF6060;
+        font-size: $font-size-large;
+        color: $color-primary;
     }
 
     .location {
-        font-size: 18px;
+        font-size: $font-size-medium;
     }
 
     .host {
         display: flex;
         align-items: center;
         gap: 15px;
-        font-size: 18px;
-        color: #FF6060;
+        font-size: $font-size-medium;
+        color: $color-primary;
 
         img {
             width: 64px;
@@ -39,24 +46,24 @@
         display: flex;
         justify-content: flex-start;
         gap: 10px;
-        color: white;
+        color: $color-white;
         width: 49%;
 
         .tag {
-            font-size: 14px;
+            font-size: $font-size-small;
             font-weight: 700;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #FF6060;
-            border-radius: 15px;
+            background: $color-primary;
+            border-radius: $border-radius;
             height: 25px;
             width: 49%;
-            text-overflow: ellipsis;
-            overflow: hidden;
+            text-overflow: ellipsis; 
+            overflow: hidden;        
             white-space: nowrap;
-        }
     }
+}
 }
 
 .collapsesLog {
@@ -74,6 +81,7 @@
     .description {
         flex-direction: column;
         margin: 10px 40px;
+
         .host {
             margin-top: 20px;
         }
