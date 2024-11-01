@@ -30,7 +30,6 @@ const Carousel = ({ pictures }) => {
             className="carousel-button" 
             aria-label="Précédent" 
             tabIndex={0} 
-            role="button"
           >
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
@@ -40,7 +39,6 @@ const Carousel = ({ pictures }) => {
             className="carousel-button" 
             aria-label="Suivant" 
             tabIndex={0} 
-            role="button"
           >
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
