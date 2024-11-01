@@ -3,7 +3,10 @@ import Logements from '../../datas/Logements.json'
 import './Home.scss'
 
 
+
+
 function Home() {
+
   return (
     <main>
     <div className='banner'>
@@ -11,7 +14,7 @@ function Home() {
     </div>
     <div className='gallery'>
       {Logements.map(({id, title, cover}) => (
-        <LocationItem key={id} title={title} cover={cover} />
+        <LocationItem key={id} title={title} cover={cover}/>
       ))}
     </div>
       </main>

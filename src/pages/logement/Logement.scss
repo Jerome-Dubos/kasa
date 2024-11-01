@@ -1,16 +1,3 @@
-.carousel {
-    height: 415px;
-    display: flex;
-    justify-content: center;
-    img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 25px;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-}
-
 .title {
     font-size: 36px;
     color: #FF6060;
@@ -30,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 50px;
 }
 
 .host {
@@ -38,7 +26,6 @@
     gap: 15px;
     font-size: 18px;
     color: #FF6060;
-    margin-right: 50px;
     margin-top: 30px;
     img {
         width: 64px;
@@ -68,18 +55,23 @@
     }
 }
 
-.rating {
-    margin-right: 50px;
-}
-
-.collapses {
+.collapsesLog {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 50px;
     margin-right: 50px;
+    gap: 30px;
     .collapse {
        width: 100%;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

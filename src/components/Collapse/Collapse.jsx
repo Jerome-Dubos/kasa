@@ -7,7 +7,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 
 function Collapse({title, content }) {
-
+    
     const [collapsed, setCollapsed] = useState(false)
     const toggleCollapse = () => {setCollapsed(!collapsed)}
 

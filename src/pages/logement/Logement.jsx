@@ -1,34 +1,42 @@
+import React, { useState } from 'react';
 import './Logement.scss'
 import Collapse from '../../components/Collapse/Collapse'
 import Logements from '../../datas/Logements.json'
+import Carousel from '../../components/Carrousel/Carrousel'
+import Rating from '../../components/Rating/Rating'
 
 
-// TODO: Récupérer les données du logement à partir de Logements.json et les afficher dans la page Logement.jsx
 function Logement() {
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   return (
     <main>
-      <div className='carousel'><img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="" /></div>
+      <div className='carousel'><Carousel /></div>
       <section className='description'>
       <div>
-      <h2 className='title'>Titre location</h2>
-      <p className='location'>localisation</p>
+      <h2 className='title'>{Logements[currentIndex].title}</h2>
+      <p className='location'>{Logements[currentIndex].location}</p>
       </div>
       <div className='host'>
-        <p>Name</p>
-        <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg" alt="" />
+        <p>{Logements[currentIndex].host.name}</p>
+        <img src={Logements[currentIndex].host.picture} alt="Hôte" />
       </div>
       </section>
       <section className='description'>
       <div className='tags'>
-        <div className='tag'>Tag1</div>
-        <div className='tag'>Tag2</div>
-        <div className='tag'>Tag3</div>
+        <div className='tag'>Tag 1</div>
+        <div className='tag'>Tag 2</div>
+        <div className='tag'>Tag 3</div>
+        {/* {Logements.map(({tags, id}) => () => (
+          <div className='tag' key={id}>{tags}</div>
+          ))} */}
       </div>
-      <div className='rating'>⭐⭐⭐⭐⭐</div>
+      <Rating rating={Logements[currentIndex].rating} />
       </section>
-      <div className='collapses'>
-        <Collapse title="Description" content="Content 1 " />
-        <Collapse title="Équipements" content="Content 2 " />
+      <div className='collapsesLog'>
+        <Collapse title="Description" content={Logements[currentIndex].description} />
+        <Collapse className='equipment' title="Équipements" content={Logements[currentIndex].equipments} />
       </div>
     </main>
   )
