@@ -89,17 +89,27 @@ $border-radius: 15px;
         margin: 10px 40px;
 
         .host {
-            margin-top: 20px;
+            margin-top: 20px;  
+            position: sticky;
+            left: 100%;
         }
     }
 
     .tags-rating {
         flex-direction: column;
         margin: 0 40px;
+        align-items: flex-start;
+        height: 0;
 
         .tags {
             width: 100%;
-            margin-bottom: 10px;
+            position: relative;
+            bottom: 110px;
+        }
+
+        .star-rating {
+            position: relative;
+            bottom: 80px;
         }
     }
 
