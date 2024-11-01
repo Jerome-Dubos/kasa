@@ -20,9 +20,17 @@
     transition: all 0.4s ease-in-out;
 }
 
-.collapsed .collapseIcon{
+.collapsed {
+    .collapseIcon{
     transform: rotate(-180deg);
     transition: all 0.4s ease-in-out;
+    }
+    .collapseContent{
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+        padding: 1rem;    
+    }
 }
 
 .collapseContent{
@@ -32,12 +40,10 @@
     overflow: hidden;
     padding: 0 1rem;
     transition: all 0.3s ease-in;
+    ul {
+        list-style-type: none;
+        }
+    li {
+        padding: 5px;
+        }
 }
-
-.collapsed .collapseContent{
-    visibility: visible;
-    height: auto;
-    opacity: 1;
-    padding: 1rem;    
-}
-
