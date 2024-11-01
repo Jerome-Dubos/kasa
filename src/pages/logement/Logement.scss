@@ -8,7 +8,7 @@ $border-radius: 15px;
 .description {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 30px 100px 0;
     gap: 20px;
 
@@ -27,6 +27,12 @@ $border-radius: 15px;
         gap: 15px;
         font-size: $font-size-medium;
         color: $color-primary;
+        text-align:end;
+
+        p {
+            width: 60px;
+            text-wrap: wrap;
+        }
 
         img {
             width: 64px;
@@ -59,8 +65,8 @@ $border-radius: 15px;
             border-radius: $border-radius;
             height: 25px;
             width: 49%;
+            overflow: hidden;
             text-overflow: ellipsis; 
-            overflow: hidden;        
             white-space: nowrap;
     }
 }
