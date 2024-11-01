@@ -3,8 +3,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 30px 100px 0;
-
-    // Ajout d'un gap pour un meilleur espacement
     gap: 20px;
 
     .title {
@@ -54,6 +52,9 @@
             border-radius: 15px;
             height: 25px;
             width: 49%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
 }
