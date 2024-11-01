@@ -1,81 +1,95 @@
-.title {
-    font-size: 36px;
-    color: #FF6060;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 30px;
-}
-
-.location {
-    font-size: 18px;
-    margin-left: 50px;
-    margin-right: 50px;
-
-}
-
 .description {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 50px;
-}
+    margin: 30px 100px 0;
 
-.host {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 18px;
-    color: #FF6060;
-    margin-top: 30px;
-    img {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-    }
-    p{
-        width: 60px;
-        text-align: end;
-    }
-}
+    // Ajout d'un gap pour un meilleur espacement
+    gap: 20px;
 
-.tags {
-    margin-top: 30px;
-    margin-left: 50px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    color: white;
-    width: 30%;
-    .tag {
-        font-size: 14px;
-        font-weight: 700;
+    .title {
+        font-size: 36px;
+        color: #FF6060;
+    }
+
+    .location {
+        font-size: 18px;
+    }
+
+    .host {
         display: flex;
-        justify-content: center;
         align-items: center;
-        background: #FF6060;
-        border-radius: 15px;
-        height: 25px;
-        width: 100%;
+        gap: 15px;
+        font-size: 18px;
+        color: #FF6060;
+
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.tags-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 100px 0;
+
+    .tags {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        color: white;
+        width: 49%;
+
+        .tag {
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FF6060;
+            border-radius: 15px;
+            height: 25px;
+            width: 49%;
+        }
     }
 }
 
 .collapsesLog {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 30px 100px;
     gap: 30px;
+
     .collapse {
-       width: 100%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .description {
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+
+        .host {
+            margin-top: 20px;
+        }
+    }
+
+    .tags-rating {
+        flex-direction: column;
+        margin: 0 40px;
+
+        .tags {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .collapsesLog {
+        flex-direction: column;
+        margin: 30px 40px;
     }
 }
