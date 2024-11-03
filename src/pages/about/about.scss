@@ -1,24 +1,25 @@
 .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(../../components/images/banner-about.png);
-    background-position: center;
-    background-size: cover;
-    margin: 30px 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../components/images/banner-about.png);
+  background-position: center;
+  background-size: cover;
+  margin: 30px 100px;
 }
 
 .collapses {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-left: 14%;
-    margin-right: 14%;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1024px) {
-    .about {
-        margin: 0 40px;
-    }
-    .collapses {
-        margin: 50px;
-    }
+  .about {
+    margin: 0 40px;
+  }
+  .collapses {
+    margin: 50px;
+  }
 }

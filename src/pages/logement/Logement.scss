@@ -1,4 +1,4 @@
-$color-primary: #FF6060;
+$color-primary: #ff6060;
 $color-white: white;
 $font-size-large: 36px;
 $font-size-medium: 18px;
@@ -6,120 +6,120 @@ $font-size-small: 14px;
 $border-radius: 15px;
 
 .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px 100px 0;
+  gap: 20px;
+
+  .title {
+    font-size: $font-size-large;
+    color: $color-primary;
+    margin-bottom: 10px;
+  }
+
+  .location {
+    font-size: $font-size-medium;
+    margin-bottom: 10px;
+  }
+
+  .host {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 30px 100px 0;
-    gap: 20px;
+    align-items: center;
+    gap: 15px;
+    font-size: $font-size-medium;
+    color: $color-primary;
+    text-align: end;
 
-    .title {
-        font-size: $font-size-large;
-        color: $color-primary;
-        margin-bottom: 10px;
+    p {
+      width: 60px;
+      text-wrap: wrap;
     }
 
-    .location {
-        font-size: $font-size-medium;
-        margin-bottom: 10px;
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
     }
-
-    .host {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        font-size: $font-size-medium;
-        color: $color-primary;
-        text-align:end;
-
-        p {
-            width: 60px;
-            text-wrap: wrap;
-        }
-
-        img {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-        }
-    }
+  }
 }
 
 .tags-rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 100px 0;
+
+  .tags {
     display: flex;
-    justify-content: space-between;
-    margin: 30px 100px 0;
+    justify-content: flex-start;
+    gap: 10px;
+    color: $color-white;
+    width: 49%;
 
-    .tags {
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-        color: $color-white;
-        width: 49%;
-
-        .tag {
-            font-size: $font-size-small;
-            font-weight: 700;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: $color-primary;
-            border-radius: $border-radius;
-            height: 25px;
-            width: 49%;
-            overflow: hidden;
-            text-overflow: ellipsis; 
-            white-space: nowrap;
+    .tag {
+      font-size: $font-size-small;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $color-primary;
+      border-radius: $border-radius;
+      height: 25px;
+      width: 49%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
-}
+  }
 }
 
 .collapsesLog {
-    display: flex;
-    flex-direction: row;
-    margin: 30px 100px;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 100px;
+  gap: 30px;
 
-    .collapse {
-        width: 100%;
-    }
+  .collapse {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .description {
-        flex-direction: column;
-        margin: 10px 40px 0;
+  .description {
+    flex-direction: column;
+    margin: 10px 40px 0;
 
-        .location {
-            margin-bottom: 20px;
-        }
-
-        .host {
-            margin-top: 20px;  
-            position: sticky;
-            left: 100%;
-        }
+    .location {
+      margin-bottom: 20px;
     }
 
-    .tags-rating {
-        flex-direction: column;
-        margin: 0 40px;
-        align-items: flex-start;
-        height: 0;
+    .host {
+      margin-top: 20px;
+      position: sticky;
+      left: 100%;
+    }
+  }
 
-        .tags {
-            width: 100%;
-            position: relative;
-            bottom: 110px;
-        }
+  .tags-rating {
+    flex-direction: column;
+    margin: 0 40px;
+    align-items: flex-start;
+    height: 0;
 
-        .star-rating {
-            position: relative;
-            bottom: 65px;
-        }
+    .tags {
+      width: 100%;
+      position: relative;
+      bottom: 110px;
     }
 
-    .collapsesLog {
-        flex-direction: column;
-        margin: 20px 40px;
+    .star-rating {
+      position: relative;
+      bottom: 65px;
     }
+  }
+
+  .collapsesLog {
+    flex-direction: column;
+    margin: 20px 40px;
+  }
 }
