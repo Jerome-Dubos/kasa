@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Navigate } from 'react-router-dom'
 import LocationItem from '../../components/LocationItem/LocationItem'
-import Logements from '../../datas/Logements.json'
 import './Home.scss'
 import Load from '../../components/Loading/Loading'
 
@@ -34,7 +33,7 @@ const Home = () => {
         <p>Chez vous, partout et ailleurs</p>
       </div>
       <div className="gallery">
-        {Logements.map((logement) => (
+        {logement.map((logement) => (
           <LocationItem
             key={logement.id}
             id={logement.id}
