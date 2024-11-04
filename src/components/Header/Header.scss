@@ -12,6 +12,7 @@ nav {
     flex-direction: row;
     gap: 50px;
     margin: 0;
+    margin-left: 20px;
 
     a {
       text-decoration: none;
@@ -34,12 +35,9 @@ nav {
     ul {
       flex-wrap: nowrap;
       gap: 26px;
-
-      li {
         a {
           font-size: 12px;
         }
-      }
     }
   }
 
