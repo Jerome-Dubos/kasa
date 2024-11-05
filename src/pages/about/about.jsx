@@ -8,7 +8,7 @@ function About() {
   const  [aboutData, setAboutData] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
-    fetch('/datas/Aboutlist.json')
+    fetch('/datas/AboutList.json')
     .then((response) => response.json())
     .then(data => {
       setAboutData(data)
